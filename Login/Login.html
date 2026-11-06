@@ -1,102 +1,72 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POTTER | Login</title>
 
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+    <link rel="stylesheet" href="estilizaçãoLogin.css">
+    <link rel="stylesheet" href="layoutLogin.css">
+</head>
+<body>
 
-header {
-    height: 95px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 8%;
-}
+    <header>
+        <div class="logo">
+            <img src="imgsLogin/logo.png" alt="Logo POTTER">
+        </div>
 
-.logo img {
-    width: 190px;
-    object-fit: contain;
-}
+        <div>
+            <a href="../Login/Login.html" class="ativo">Login</a>
+            <a href="../Cadastro/Cadastro.html">Cadastro</a>
+        </div>
+    </header>
 
-main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 45px 8%;
-    gap: 60px;
-}
+    <main>
+        <section class="cadastro">
+            <p class="subtitulo">BEM-VINDO DE VOLTA</p>
 
-.cadastro {
-    width: 50%;
-    max-width: 500px;
-    padding: 50px;
-}
+            <h2>Entre na sua<br>conta Potter.</h2>
 
-.cadastro h2 {
-    margin: 15px 0;
-}
+            <p class="descricao">
+                Acesse sua conta para explorar o catálogo,
+                acompanhar seus pedidos e conhecer nossas peças.
+            </p>
 
-.descricao {
-    margin-bottom: 35px;
-    line-height: 1.6;
-}
+            <form onsubmit="event.preventDefault(); verificarLogin();">
+                <input
+                    type="email"
+                    placeholder="E-mail"
+                    required
+                    id="gmailLogin"
+                    autocomplete="email"
+                >
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
+                <input
+                    type="password"
+                    placeholder="Senha"
+                    required
+                    id="senhaLogin"
+                    autocomplete="current-password"
+                >
 
-form input {
-    width: 100%;
-    height: 54px;
-    padding: 0 20px;
-}
+                <button type="submit">Entrar →</button>
+            </form>
 
-form button {
-    height: 56px;
-    margin-top: 12px;
-    cursor: pointer;
-}
+            <div class="divisor">
+                <p>OU</p>
+            </div>
 
-.divisor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin: 30px 0;
-}
+            <p class="entrar">
+                Ainda não tem uma conta?
+                <a href="../Cadastro/Cadastro.html">Cadastre-se</a>
+            </p>
 
+            <p class="entrar" style="margin-top: 18px;">
+                <a href="../RecuperarSenha/Recuperar.html">Esqueceu sua senha?</a>
+            </p>
+        </section>
+    </main>
 
-
-.divisor span {
-    flex: 1;
-    height: 1px;
-}
-
-.entrar {
-    text-align: center;
-}
-
-.imagem {
-    width: 45%;
-    max-width: 550px;
-    height: 650px;
-}
-
-.imagem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-footer {
-    padding: 20px 8%;
-}
+    <script src="Login.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POTTER | Recuperar senha</title>
+    <link rel="stylesheet" href="estilizaçãoRecuperar.css">
+    <link rel="stylesheet" href="layoutRecuperar.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="../Login/imgsLogin/logo.png" alt="Logo POTTER"></div>
+        <div class="links"><a href="../Login/Login.html">Login
+        </a><a href="../Cadastro/Cadastro.html">Cadastro</a>
+        </div>
+    </header>
+    <main>
+        <section class="recuperar">
+            <p class="subtitulo">ACESSO À SUA CONTA</p>
+            <h2>Recupere sua<br>senha.</h2>
+            <p class="descricao">
+                Informe o e-mail cadastrado para gerar um código de recuperação.
+            </p>
+            <form id="formEmail"><label for="emailRecuperar">E-mail cadastrado</label><input type="email"
+                    id="emailRecuperar" placeholder="seuemail@exemplo.com" autocomplete="email" required><button
+                    type="submit">Gerar código →</button></form>
+            <div id="areaCodigo" class="etapa" hidden>
+                <p class="aviso">Código de demonstração:</p>
+                <div id="codigoGerado" class="codigo-gerado" aria-live="polite"></div>
+                <form id="formCodigo"><label for="codigoDigitado">Digite o código acima</label><input type="text"
+                        id="codigoDigitado" placeholder="Código de 6 dígitos" inputmode="numeric" maxlength="6"
+                        autocomplete="one-time-code" required><button type="submit">Verificar código →</button></form>
+            </div>
+            <div id="areaNovaSenha" class="etapa" hidden>
+                <p class="sucesso">Código confirmado! Agora escolha sua nova senha.</p>
+                <form id="formNovaSenha"><label for="novaSenha">Nova senha</label><input type="password" id="novaSenha"
+                        placeholder="Digite a nova senha" minlength="4" autocomplete="new-password" required><label
+                        for="confirmarNovaSenha">Confirme a nova senha</label><input type="password"
+                        id="confirmarNovaSenha" placeholder="Digite novamente" minlength="4" autocomplete="new-password"
+                        required><button type="submit">Salvar nova senha →</button></form>
+            </div>
+            <p id="mensagem" class="mensagem" role="status" aria-live="polite"></p>
+            <p class="voltar"><a href="../Login/Login.html">← Voltar para o login</a></p>
+        </section>
+    </main>
+    <script src="Recuperar.js"></script>
+</body>
+
+</html>
