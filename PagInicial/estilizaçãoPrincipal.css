@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #f8efdd;
+    color: #284436;
+}
+
+/* CABECALHO */
+
+header {
+    min-height: 80px;
+    padding: 15px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff5e3;
+}
+
+header  img {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    gap: 45px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #284436;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #b86830;
+}
+
+.icones {
+    font-size: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+
+.banner {
+    height: 400px;
+    width: 100%;
+    background-image: url(imgsPrincipal/fundo_banner.png);
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-conteudo {
+    max-width: 430px;
+}
+
+
+.banner h2 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 40px;
+    margin-bottom: 25px;
+    position: relative;
+    left: 300px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #284436;
+    color: #fff5e3;
+    border-radius: 30px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+
+.catalogo {
+    padding: 35px 5% 45px;
+}
+
+.catalogo h2 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.descricao {
+    font-size: 17px;
+    margin-bottom: 25px;
+    color: #526354;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.produto {
+    background-color: #fff4df;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #4b38221a;
+    transition: transform 0.2s;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.produto img {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+    display: block;
+}
+
+.produto-info {
+    padding: 13px;
+}
+
+.produto h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.preco {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.comprar {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/* RODAPE */
+
+footer {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background-color: #eee1c7;
+    font-size: 14px;
+}
+
+

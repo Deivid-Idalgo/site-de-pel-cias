@@ -1,0 +1,118 @@
+
+body {
+    background-color: #4e5513a9;
+    color: #F8D794;
+    font-family: Arial, sans-serif;
+    background-image: url(imgsCadastro/fundoCadastro.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #4e5513a9;
+    border-bottom: 1px solid #809076;
+    padding: 20px;
+}
+
+header a {
+    color: #F8D794;
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+}
+
+header a:hover,
+header a.ativo {
+    border-bottom: 2px solid #F8D794;
+}
+
+.cadastro {
+    background-color: #4e5513ee;
+    border-radius: 30px;
+}
+
+.subtitulo {
+    color: #1d2916;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.cadastro h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.descricao {
+    color: #B8BDB4;
+    font-size: 14px;
+}
+
+form input {
+    background-color: #2e301ca9;
+    border: 1px solid #607568;
+    border-radius: 10px;
+    color: #F8D794;
+    font-size: 14px;
+}
+
+form input::placeholder {
+    color: #89958C;
+}
+
+form input:focus {
+    border-color: #F8D794;
+}
+
+form button {
+    background-color: #F8D794;
+    color: #111A19;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #809076;
+}
+
+.divisor span {
+    background-color: #607568;
+}
+
+.divisor p {
+    color: #B8BDB4;
+    font-size: 12px;
+}
+
+.entrar {
+    color: #D5D5C9;
+    font-size: 14px;
+}
+
+.entrar a {
+    color: #F8D794;
+    text-decoration: underline;
+}
+
+.imagem {
+    border: 1px solid #B89B62;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.imagem img {
+    display: block;
+}
+
+footer {
+    color: #809076;
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.8;
+}

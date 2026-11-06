@@ -1,0 +1,106 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 190px;
+    object-fit: contain;
+}
+
+header div:last-child {
+    display: flex;
+    gap: 40px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 45px 8%;
+}
+
+.cadastro {
+    width: 100%;
+    max-width: 480px;
+}
+
+.cadastro h2 {
+    margin: 15px 0;
+}
+
+.descricao {
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+form input {
+    width: 100%;
+    height: 54px;
+    padding: 0 18px;
+}
+
+.cadastro button {
+    width: 100%;
+    height: 54px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.divisor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 28px 0;
+}
+
+.entrar {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0 5%;
+    }
+
+    header div:last-child {
+        gap: 18px;
+    }
+
+    main {
+        padding: 35px 7%;
+    }
+
+    .cadastro h2 {
+        font-size: 32px;
+    }
+}
